@@ -20,6 +20,7 @@ for nombreArchivo in os.listdir(rutaParcial):
     profesor = archivo.readline().replace(",", " ").replace("\n", "")
 
     if anio == "2018":
+
         # Linea para salta los especios para llegar al primer comentario
         archivo.readline()
         archivo.readline()
