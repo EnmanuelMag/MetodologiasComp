@@ -33,3 +33,6 @@ def llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc):
                     dicc[profesor][codigoMat][anio][termino].extend(comentsLimpios)
 
     return dicc
+
+def square(x):
+    assert x >= 0

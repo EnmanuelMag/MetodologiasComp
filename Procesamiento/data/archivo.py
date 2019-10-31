@@ -19,22 +19,23 @@ for nombreArchivo in os.listdir(rutaParcial):
 
     profesor = archivo.readline().replace(",", " ").replace("\n", "")
 
-    #Linea para salta los especios para llegar al primer comentario
-    archivo.readline()
-    archivo.readline()
+    if anio == "2018":
+        # Linea para salta los especios para llegar al primer comentario
+        archivo.readline()
+        archivo.readline()
 
-    comentarios = archivo.readlines()
-    comentsLimpios = []
+        comentarios = archivo.readlines()
+        comentsLimpios = []
 
-    for comentario in comentarios:
+        for comentario in comentarios:
 
-        if len(comentario) > 1:
-            # 1.Filto las Stopwords
-            comentFiltrado = fn.limpiarStopWords(comentario)
-            # 2.Sepracion de palabras
-            comentsLimpios.append(fn.separarPalabras(comentFiltrado))
+            if len(comentario) > 1:
+                # 1.Filto las Stopwords
+                comentFiltrado = fn.limpiarStopWords(comentario)
+                # 2.Sepracion de palabras
+                comentsLimpios.append(fn.separarPalabras(comentFiltrado))
 
-    dicc = fn.llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc)
+        dicc = fn.llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc)
 
 print("ROCÍO ELIZABETH MERA SUÁREZ: " +str(dicc.get("ROCÍO ELIZABETH MERA SUÁREZ")))
 
