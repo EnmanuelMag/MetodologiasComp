@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13fc21e6-88e5-4086-af4a-7ca2a2405949" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/archivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/archivo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/funciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/funciones.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +91,21 @@
       <option name="presentableId" value="Default" />
       <updated>1572037869215</updated>
     </task>
+    <task id="LOCAL-00001" summary="Filtrado del anio de profes">
+      <created>1572541008184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572541008184</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Filtrado del anio de profes 2">
+      <created>1572541147011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572541147011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,5 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Filtrado del anio de profes" />
+    <MESSAGE value="Filtrado del anio de profes 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filtrado del anio de profes 2" />
   </component>
 </project>
