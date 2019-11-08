@@ -1,8 +1,18 @@
 import funciones as fn
 import os
 
+
+'''
+curl -X POST -u "apikey:HGQfgUKC9Fqzjd1ByZlA2SUeovZaAz0G-veawWHILSLj" \
+--header "Content-Type: application/json" \
+--data-binary @{path_to_file}tone.json \
+"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"
+
+'''
+
 rutaParcial = "../detalle/"
 dicc = {}
+cantComents = 0
 
 print("Cargando y limpiando comentarios. . .")
 for nombreArchivo in os.listdir(rutaParcial):
@@ -29,16 +39,22 @@ for nombreArchivo in os.listdir(rutaParcial):
         comentsLimpios = []
 
         for comentario in comentarios:
-
-            if len(comentario) > 1:
+            comentario = comentario.replace("\n", "")
+            if len(comentario) > 0:
                 # 1.Filto las Stopwords
-                comentFiltrado = fn.limpiarStopWords(comentario)
+
                 # 2.Sepracion de palabras
-                comentsLimpios.append(fn.separarPalabras(comentFiltrado))
+                comentsLimpios.append(fn.separarPalabras(comentario))
 
-        dicc = fn.llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc)
+        if len(comentsLimpios) > 0:
+            cantComents += len(comentsLimpios)
+            dicc = fn.llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc)
 
-print("ROCÍO ELIZABETH MERA SUÁREZ: " +str(dicc.get("ROCÍO ELIZABETH MERA SUÁREZ")))
+
+
+
+print(dicc.get("ROCÍO ELIZABETH MERA SUÁREZ"))
+print("Cantidad de comentarios dle 2018: " + str(cantComents))
 
 #Tambien se puede simplicar palabras como muuuuy a muy
 #sin embargo creo que esto si es significativo para nuestro estudio
