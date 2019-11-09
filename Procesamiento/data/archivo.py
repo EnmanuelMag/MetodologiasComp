@@ -1,7 +1,7 @@
 import funciones as fn
 import os
 
-
+#Credenciales API SentiDetector
 '''
 curl -X POST -u "apikey:HGQfgUKC9Fqzjd1ByZlA2SUeovZaAz0G-veawWHILSLj" \
 --header "Content-Type: application/json" \
@@ -15,6 +15,7 @@ dicc = {}
 cantComents = 0
 
 print("Cargando y limpiando comentarios. . .")
+'''
 for nombreArchivo in os.listdir(rutaParcial):
 
     rutaCompleta = os.path.join(rutaParcial, nombreArchivo)
@@ -49,12 +50,13 @@ for nombreArchivo in os.listdir(rutaParcial):
         if len(comentsLimpios) > 0:
             cantComents += len(comentsLimpios)
             dicc = fn.llenarDiccionario(profesor, codigoMat, termino, anio, comentsLimpios, dicc)
+'''
+#print(fn.traducir("Hello World!"))
 
-
-
-
-print(dicc.get("ROCÍO ELIZABETH MERA SUÁREZ"))
+print(fn.tra())
+#print(dicc.get("ROCÍO ELIZABETH MERA SUÁREZ"))
 print("Cantidad de comentarios dle 2018: " + str(cantComents))
+
 
 #Tambien se puede simplicar palabras como muuuuy a muy
 #sin embargo creo que esto si es significativo para nuestro estudio

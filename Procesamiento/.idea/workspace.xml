@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13fc21e6-88e5-4086-af4a-7ca2a2405949" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Procesamiento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Procesamiento.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/archivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/archivo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/funciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/funciones.py" afterDir="false" />
@@ -54,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.archivo">
     <configuration name="archivo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Procesamiento" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,9 +78,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="funciones" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Procesamiento" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/funciones.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.archivo" />
+        <item itemvalue="Python.funciones" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572541306881</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemntacion de api de detector de sentimienots y traductor de texto">
+      <created>1573232456125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573232456125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +165,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Filtrado del anio de profes" />
     <MESSAGE value="Filtrado del anio de profes 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filtrado del anio de profes 2" />
+    <MESSAGE value="Implemntacion de api de detector de sentimienots y traductor de texto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemntacion de api de detector de sentimienots y traductor de texto" />
   </component>
 </project>
